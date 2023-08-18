@@ -1,0 +1,281 @@
+*
+{
+background: #000;
+margin: 0%;
+padding: 0%; 
+
+}
+body{
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    font-family: 'Nunito', sans-serif;
+}
+.solar
+{
+margin-left: 50%;
+overflow: hidden;
+background: #669bbc;
+width: 350px;
+height: 170px;
+border: 0.5px solid rgb(0, 0, 0);
+border-radius: 100px;
+display: flex;
+align-items: center;
+box-shadow: 0px 0px 30px 6px #669bbc;
+/* animation: one 6s linear; */
+
+}
+
+.shade1,.shade2,.shade3
+{
+    display: flex;
+align-items: center;
+justify-content: center;
+opacity: 90%;
+}
+
+
+.shade1
+{
+background:#e85d04;
+width: 130px;
+height: 130px;
+border-radius: 50%;
+margin-left: 21px;
+box-shadow: 0px 0px 20px 18px #e85d04;
+animation: one 6s linear;
+    /* animation-iteration-count: 1;
+    animation-fill-mode: forwards; */
+
+}
+.shade2
+{
+ background:#f48c06;
+width: 115px;
+height: 115px;
+border-radius: 50%;
+box-shadow:   0 0 9px 0.2px #e85d04;
+animation: two 6s linear ;
+    /* animation-iteration-count: 1;
+    animation-fill-mode: forwards; */
+
+
+}
+.shade3
+{
+background:#faa307;
+width: 90px;
+height: 90px;
+border-radius: 50%;
+box-shadow:   0 0 4px 0.1px #bd1626;
+animation: three 6s linear ;
+    /* animation-iteration-count: 1;
+    animation-fill-mode: forwards; */
+
+}
+.circle
+{
+background:#ffc229;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+box-shadow: 0px 0px 15px 12px #e85d04;
+animation: four 6s linear;
+    /* animation-iteration-count: 1;
+    animation-fill-mode: forwards; */
+
+}
+
+@keyframes solar{
+    40%
+      {
+         
+              background: #070824;
+              /* overflow: hidden; */
+              /* transform: translateX(185px);
+              box-shadow: 0px 0px 20px 18px #1d3557; */
+              
+          }  
+  }
+@keyframes one{
+  40%
+    {
+       
+            background-color: #1d3557;
+            transform: translateX(200px);
+            box-shadow: 0px 0px 20px 16px #1d3557;
+           
+            /* position: absolute;
+            left: 68%; */
+            /* transition: 3s ease-in-out; */
+        }  
+}
+@keyframes two{
+    40%
+      {
+        background-color: #457b9d;
+        box-shadow:   0 0 9px 0.2px #457b9d;
+          }
+        }
+
+@keyframes three{
+    40%
+     {
+    background-color: #a8dadc;
+    box-shadow:   0 0 4px 0.1px #a8dadc;
+
+    }
+    }
+
+     @keyframes four{
+    40%
+      {
+    background-color: #f1faee;
+    box-shadow: 0px 0px 15px 12px #caccc9;
+     }
+      }
+      @keyframes five{
+        40%
+          {
+        background-color: #000000;
+        box-shadow: 0px 0px 15px 12px #caccc9;
+         }
+          }
+
+.mountain1
+{
+    height: 70px;
+    width: 70px;
+    background: #5c200c;
+    transform: rotate(45deg);
+    position: relative;
+    top: 84px;
+    left: 40px;
+    border: 4px solid #5c200c;
+    z-index: 1;
+    animation: four 6s linear;
+    animation:mountain1 linear 6s;
+}
+#mountain2
+{
+    height: 130px;
+    background: #702810;
+    width: 100px;
+    border: 4px solid #6e2b15;
+    /* opacity: 95%; */
+    position: relative;
+    top: 80px;
+    left: 58px;
+    z-index: 2;
+}
+.mountain3
+{
+    background: #7a3017;
+    height: 50px;
+    width:50px;
+    border: 4px solid #682c18;
+    opacity: 95%;
+    transform: rotate(40deg);
+    position: relative;
+    top: 67px;
+    right: 62px;
+    animation:mountain1 linear 6s;
+
+    
+}
+.crow1
+{
+    position: relative;
+    width: 0.5px;
+    height: 0.5px;
+background: #669bbc;
+left: 40px;
+animation:crow1 linear 4.5s;
+}
+
+.crow2
+{
+ 
+    width: 0.5px;
+    height: 0.5px;
+background: #669bbc;
+position: relative;
+left: 100px;
+bottom:30px;
+animation:crow1 linear 4.5s;
+}
+
+
+.cloud1,.cloud2
+{
+    width: 55px;
+    height: 35px;
+ background: none;
+position: absolute;
+right: 5px;
+top:50px;
+opacity: 0%;
+animation: cloud linear 4s;
+}
+
+.cloud1
+{
+    width: 65px;
+    height: 45px;
+    position: absolute;
+right: 70px;
+top:90px;
+animation: cloud linear 4s;
+}
+
+@keyframes cloud{
+    0%,100%{
+        opacity: 0%;
+    }
+    30%
+    {
+       opacity: 30%;
+    }
+    40%
+    {
+       opacity: 50%;
+    }
+    50%
+    {
+     opacity: 60%;
+    }
+    70%
+    {
+     opacity: 80%;
+    }
+    80%{
+        opacity: 90%;
+    }
+90%{
+    opacity: 100%;
+}
+
+    }
+
+@keyframes mountain1{
+    40%
+      {
+
+        background-color: #26424b;
+        /* box-shadow:   0 0 9px 0.2px #40798c; */
+        border: 4px solid #2d4a53;
+          }
+        }
+
+@keyframes crow1{
+30%{
+    opacity: 40%;
+}
+40%{
+    opacity: 0%;
+}
+80%{
+    opacity: 0%;
+}
+}
